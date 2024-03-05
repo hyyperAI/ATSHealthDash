@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="../static/assets/img/avatar/logo.png" type="image/gif" sizes="16x16">
+      <title>ICU Predictions</title>
+      <meta name="og:description" content="dsf the DataMents Free Bootstrap Admin Dashboard Template, your ultimate solution to a seamless web management experience! This is more than just a template; it's your partner in crafting a digital masterpiece.">
+      <meta name="robots" content="index, follow">
+      <meta name="og:title" property="og:title" content="DataMents - Free Bootstrap Admin Dashboard Template">
+      <meta property="og:image" content="https://www.designtocodes.com/wp-content/uploads/2023/08/DataMents-Free-Bootstrap-Admin-Dashboard-Template.jpg">
+      <!-- bootstrap css link -->
+      <link rel="stylesheet" href="../static/lib/bootstrap_5/bootstrap.min.css">
+      <!-- Font Awesome CDN -->
+      <link rel="stylesheet" href="../static/lib/fontawesome/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      <!-- main css -->
+      <link rel="stylesheet" href="../static/assets/css/global.css">
+      <link rel="stylesheet" href="../static/assets/css/style.css">
+      <!-- responsive css -->
+      <link rel="stylesheet" href="../static/assets/css/responsive.css">
+      <link rel="stylesheet" type="text/css" href="../static/lib/jQuery/calendar/css/jquery.datetimepicker.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   </head>
+   <body>
+      <div class="d2c_wrapper">
+         <!-- sidebar -->
+         <div class="d2c_sidebar rounded-4 px-4 py-4 py-md-4 m-4 me-0" id="sidebar">
+            <div class="d-flex flex-column h-100">
+               <a href="/index.html" class="mb-0 brand-icon">
+               <img class="navbar-brand w-100" src="../static/assets/img/avatar/logo.png" alt="logo">
+               </a>
+               <hr class="divider">
+               <ul class="navbar-nav flex-grow-1" id="d2c_Sidebar">
+                  <!-- Menu Item -->
+                  <li class="nav-item">
+                     <a class="nav-link active" href="/index.html">
+                     <i class="fas fa-home me-2"></i>
+                     <span>Home</span>
+                     </a>
+                  </li>
+                  <!-- Menu Item -->
+                  <!-- Dropdown: Menu Item -->
+                  <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#app" aria-expanded="false"
+                        href="#">
+                     <i class="fas fa-layer-group me-2"></i>
+                     <span>ICU</span>
+                     <span class="fas fa-chevron-right ms-auto text-end"></span>
+                     </a>
+                     <!-- Menu: Sub menu ul -->
+                     <ul class="sub-menu collapse rounded-3" id="app" data-bs-parent="#d2c_Sidebar">
+                        <li class="nav-item">
+                           <a class="sub-menu-link" href="dashboard_icu.html">ICU Patient intake</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="sub-menu-link" href="prediction.html">Patient Predictions</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Dropdown: Menu Item -->
+                  <!-- Menu Item -->
+                  <li class="nav-item">
+                     <a class="nav-link" href="patientjourney.html">
+                     <i class="fas fa-list me-2"></i>
+                     <span>Patient Journey</span>
+                     </a>
+                  </li>
+                  <!-- Menu Item -->
+                  <!-- Dropdown: Menu Item -->
+                  <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#charts" aria-expanded="false" href="#">
+                     <i class="fas fa-chart-bar me-2"></i>
+                     <span>
+                     Clinical Outcome
+                     </span>
+                     <span class="fas fa-chevron-right ms-auto text-end"></span>
+                     </a>
+                     <!-- Menu: Sub menu ul -->
+                     <ul class="sub-menu collapse rounded-3" id="charts" data-bs-parent="#d2c_Sidebar">
+                        <li class="nav-item">
+                           <a class="sub-menu-link" href="../pages/500.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="sub-menu-link" href="../pages/500.html">Diagnoses</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Dropdown: Menu Item -->
+                  <!-- Dropdown: Menu Item -->
+                  <!-- Dropdown: Menu Item -->
+                  <!-- Dropdown: Menu Item -->
+                  <!-- Dropdown: Menu Item -->
+                  <!-- Dropdown: Menu Item -->
+                  <li class="nav-item" style=" margin-top:100%">
+                     <a class="nav-link " href="email.html">
+                     <i class="fas fa-home me-2"></i>
+                     <span>Message</span>
+                     </a>
+                  </li>
+                  <!-- Dropdown: Menu Item -->
+                  <!-- Dropdown: Menu Item -->
+                  <li class="nav-item">
+                     <a class="nav-link " href="../pages/notifications.html">
+                     <i class="fas fa-home me-2"></i>
+                     <span>Notifications</span>
+                     </a>
+                  </li>
+                  <!-- Dropdown: Menu Item -->
+                  <!-- Dropdown: Menu Item -->
+                  <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="collapse" data-bs-target="#extraPages" aria-expanded="false"
+                        href="#">
+                     <i class="fas fa-file-alt me-2"></i>
+                     <span>LogIn</span>
+                     <span class="fas fa-chevron-right ms-auto text-end"></span>
+                     </a>
+                     <!-- Menu: Sub menu ul -->
+                     <ul class="sub-menu collapse rounded-3" id="extraPages" data-bs-parent="#d2c_Sidebar">
+                        <li class="nav-item">
+                           <a class="sub-menu-link" href="../pages/signin.html">Login </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="sub-menu-link" href="../pages/sign_up.html">Sign up</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <!-- Dropdown: Menu Item -->
+                  <!-- Menu Item -->
+                  <li class="nav-item">
+                     <a class="nav-link" href="../pages/profile.html">
+                     <i class="fas fa-book-open me-2"></i>
+                     <span>Settings </span>
+                     </a>
+                  </li>
+                  <!-- Menu Item -->
+               </ul>
+               <hr class="divider">
+               <!-- Sidebar: Profile -->
+               <div class="sidebar-mini-btn text-light">
+                  <div class="dropdown">
+                     <a class="dropdown-closer" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                     <img class="img-profile rounded-circle object-fit-cover border border-2 border-white me-2"
+                        src="../static/assets/img/avatar/man-4.png" alt="avatar" width="30" height="30">
+                     <span>Abdur Rehman</span>
+                     </a>
+                     <!-- Dropdown -->
+                     <div class="dropdown-menu shadow border-0 end-0 start rounded-3">
+                        <a class="dropdown-item" href="../pages/profile.html">
+                        <i class="fas fa-user fa-fw me-2 text-gray-400"></i>
+                        Profile
+                        </a>
+                        <a class="dropdown-item" href="#">
+                        <i class="fas fa-comment-alt fa-fw me-2 text-gray-400"></i>
+                        Message
+                        </a>
+                        <a class="dropdown-item" href="#">
+                        <i class="fas fa-cog fa-fw me-2 text-gray-400"></i>
+                        Profile Setting
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                        <i class="fas fa-sign-out-alt fa-fw me-2 text-gray-400"></i>
+                        Logout
+                        </a>
+                        <div class="dropdown-arrow bg-info"></div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Sidebar: Profile -->
+            </div>
+         </div>
+         <!-- main body area -->
+         <div class="d2c_main px-lg-4 px-md-4 px-3">
+            <!-- Top Nav -->
+            <nav
+               class="navbar navbar-expand navbar-light sticky-top bg-white shadow py-2 px-3 rounded-4 d2c_top_navbar my-4">
+               <!-- Sidebar toggler -->
+               <button type="button" id="sidebarCollapse"
+                  class="btn btn-transparent text-info d2c_sidebar_collapse me-1">
+               <i class="fas fa-bars"></i>
+               </button>
+               <!-- Sidebar toggler -->
+               <div>
+                  <!-- Search Form -->
+                  <form class="form d2c_nav_form me-3 d-none d-md-flex" role="search">
+                     <div class="input-group">
+                        <button class="btn btn-outline-info rounded-end rounded-pill border-end-0" type="submit">
+                        <i class="fas fa-search fa-sm"></i>
+                        </button>
+                        <input class="form-control border-start-0 rounded-start rounded-pill" type="search"
+                           placeholder="Search..." aria-label="Search" required>
+                     </div>
+                  </form>
+                  <!-- Search Form: Nav Item -->
+                  <div class="d-flex d-md-none">
+                     <!-- Search Box: Nav Item -->
+                     <a class="nav-link text-info" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                     <i class="fas fa-search fa-sm"></i>
+                     </a>
+                     <ul class="dropdown-menu p-0 mt-0 border-0 rounded-pill">
+                        <li>
+                           <form class="form d2c_nav_form" role="search">
+                              <div class="input-group">
+                                 <button class="btn btn-outline-info rounded-end rounded-pill border-end-0"
+                                    type="submit">
+                                 <i class="fas fa-search fa-sm"></i>
+                                 </button>
+                                 <input class="form-control border-start-0 rounded-start rounded-pill"
+                                    type="search" placeholder="Search..." aria-label="Search" required>
+                              </div>
+                           </form>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- Search Form: Nav Item -->
+               <ul class="navbar-nav align-items-center mb-lg-0 ms-auto">
+                  <!-- Notification: Nav Item -->
+                  <li class="nav-item d2c_dropdown_right dropdown me-3">
+                     <a class="nav-link text-info p-0" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                     <i class="fas fa-bell fa-fw"></i>
+                     <span
+                        class="position-absolute top-0 start-100 translate-middle p-1 bg-secondary border rounded-circle"></span>
+                     </a>
+                     <div class="dropdown-list dropdown-menu dropdown-menu-right shadow border-0 py-0 mt-3">
+                        <h6 class="dropdown-header text-white bg-info rounded-top py-3">Notifications</h6>
+                        <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                           <div class="text-truncate d-block">
+                              <p class="mb-0"><small>19 sec ago</small></p>
+                              <h6 class="mb-0">Hi there! I am wondering if you can help me with a problem I've been having.</h6>
+                           </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                           <div class="text-truncate d-block">
+                              <p class="mb-0"><small>2 min ago</small></p>
+                              <h6 class="mb-0">
+                                 I have the photos that you ordered last month, how would
+                                 you like them sent to you?
+                              </h6>
+                           </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                           <div class="text-truncate d-block">
+                              <p class="mb-0"><small>3 min ago</small></p>
+                              <h6 class="mb-0">Last month's report looks great, I am very happy with
+                                 the progress so far, keep up the good work!
+                              </h6>
+                           </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="../pages/notifications.html">
+                           <div class="text-truncate d-block">
+                              <p class="mb-0"><small>4 min ago</small></p>
+                              <h6 class="mb-0">Am I a good boy? The reason I ask is because someone
+                                 told me that people say this to all dogs, even if they
+                                 aren't good...
+                              </h6>
+                           </div>
+                        </a>
+                        <a class="dropdown-item text-center small text-gray-500 py-2"
+                           href="../pages/notifications.html">See All
+                        Notifications</a>
+                        <div class="dropdown-arrow bg-info"></div>
+                     </div>
+                  </li>
+                  <!-- Notification: Nav Item -->
+                  <!-- MailBox: Nav Item -->
+                  <li class="nav-item d2c_dropdown_right dropdown me-3">
+                     <a class="nav-link position-relative text-info p-0" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                     <i class="fas fa-envelope-open-text"></i>
+                     <span
+                        class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                     </a>
+                     <div class="dropdown-list dropdown-menu shadow border-0 end-0 py-0 mt-3">
+                        <h6 class="dropdown-header text-white bg-info rounded-top py-3">Mail</h6>
+                        <a class="dropdown-item d-flex align-items-center" href="open_mail.html">
+                           <div class="text-truncate">
+                              <div>
+                                 <img src="../static/assets/img/avatar/man-1.png" class="d2c_mail_avatar" alt="profile avatar">
+                              </div>
+                              <div>
+                                 <p class="mb-0"><small>3 min ago</small></p>
+                                 Hi there! I am wondering if you can help me with a
+                                 problem I've been having.
+                              </div>
+                           </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="open_mail.html">
+                           <div class="text-truncate">
+                              <div>
+                                 <img src="../static/assets/img/avatar/man-2.png" class="d2c_mail_avatar" alt="profile avatar">
+                              </div>
+                              <div>
+                                 <p class="mb-0"><small>4 min ago</small></p>
+                                 I have the photos that you ordered last month, how would you like them sent to you?
+                              </div>
+                           </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="open_mail.html">
+                           <div class="text-truncate">
+                              <div>
+                                 <img src="../static/assets/img/avatar/man-3.png" class="d2c_mail_avatar" alt="profile avatar">
+                              </div>
+                              <div>
+                                 <p class="mb-0"><small>6 min ago</small></p>
+                                 Last month's report looks great, I am very happy with
+                                 the progress so far, keep up the good work!
+                              </div>
+                           </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="open_mail.html">
+                           <div class="text-truncate">
+                              <div>
+                                 <img src="../static/assets/img/avatar/man-4.png" class="d2c_mail_avatar" alt="profile avatar">
+                              </div>
+                              <div>
+                                 <p class="mb-0"><small>10 min ago</small></p>
+                                 Am I a good boy? The reason I ask is because someone
+                                 told me that people say this to all dogs, even if they
+                                 aren't good..
+                              </div>
+                           </div>
+                        </a>
+                        <a class="dropdown-item text-center small text-gray-500 py-2"
+                           href="email.html">See All Mail</a>
+                        <div class="dropdown-arrow bg-info"></div>
+                     </div>
+                  </li>
+                  <!-- MailBox: Nav Item -->
+               </ul>
+            </nav>
+            <!-- Top Nav -->
+            <!-- Body: Body -->
+            <div class="body">
+               <div class="row d2c_home_balance_card">
+                  <!-- wallet balance card -->
+                  <div class="col-md-6 col-xl-3" >
+                     <div class="card" style="height: 170px;" >
+                        <div class="card-body">
+                           <div class="d-flex align-items-center justify-content-between mb-2">
+                              <div>
+                                 <h5>Date</h5>
+                              </div>
+                              <div class="d2c_icon bg-primary rounded-circle text-white">
+                                 <i class="fas fa-calendar-alt"></i>
+                              </div>
+                           </div>
+                           
+                           
+                              <h3 class="mb-1 fw-bold text-dark" id="local_time" >2024-01-01 </h3>
+                              <h6 >
+                                 <div class="d-flex" >
+                                    <div class="d2c_status_btn border-0 text-dark fw-bold" id="shift-time" style="padding-right: 100px; ">
+                                       04:00:00
+                                    </div>
+                                    <div class="d2c_status_btn border-0 text-dark fw-bold" id="shift">
+                                       Night
+                                    </div>
+                                 </div>
+                              </h6>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Personal Balance card   -->
+                  <div class="col-md-6 col-xl-3">
+                     <div class="card" style="height: 170px;">
+                        <div class="card-body">
+                           <div class="d-flex align-items-center justify-content-between mb-2">
+                              <div>
+                                 <h5>Avaliable Beds in ICU</h5>
+                              </div>
+                              <div class="d2c_icon bg-dark rounded-circle text-white">
+                                 <i class="fas fa-hand-holding-usd" ></i>
+                              </div>
+                           </div>
+                           <h1 class="mb-1 fw-bold text-dark" id="total-bed-icu-head">45 </h1>
+                           <div class="d-flex">
+                           </div>
+                           <!-- <p class="small text-muted mb-1">Total Patients in ICU</p> -->
+                           <p class="small text-muted mb-0"></p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Total length of stay
+                     -->
+                  <div class="col-md-6 col-xl-3">
+                     <div class="card" style="height: 170px;">
+                        <div class="card-body">
+                           <div class="d-flex align-items-center justify-content-between mb-2 ">
+                              <div>
+                                 <h5>Length of Stay</h5>
+                              </div>
+                              <div class="d2c_icon bg-warning rounded-circle text-white">
+                                 <i class="fas fa-suitcase"></i>
+                              </div>
+                           </div>
+                           <h1 class="mb-1 fw-bold text-dark" id="total-los-head">2.11 </h1>
+                           <h6>
+                           In Days</h5>
+                           <div class="d-flex">
+                           </div>
+                           <p class="small text-muted mb-0"></p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Total bed -->
+                  <div class="col-md-6 col-xl-3">
+                     <div class="card"style="height: 170px;">
+                        <div class="card-body">
+                           <div class="d-flex align-items-center justify-content-between mb-2">
+                              <div>
+                                 <h5>Total Patients in ICU</h5>
+                              </div>
+                              <div class="d2c_icon bg-success rounded-circle text-white">
+                                 <i class="fas fa-user-md"></i>
+                              </div>
+                           </div>
+                           <h1 class="mb-1 fw-bold text-dark" id="total-patient-icu-head">45 </h1>
+                           <h5>
+                              <div class="d-flex">
+                                 <div class="d2c_status_btn border-0 text-success fw-bold" id="patient-intake" style="padding-right: 100px;">
+                                    4 Intake
+                                 </div>
+                                 <div class="d2c_status_btn border-0 text-danger fw-bold" id="patient-outake">
+                                    4 Discharge
+                                 </div>
+                              </div>
+                           </h5>
+                           <p class="small text-muted mb-0"></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+                  <!-- Cost of Goods line chart -->
+                  <!-- icu prediction -->
+                  <div class="row">
+                     <div class="col-xl-9">
+                        <div class="card" style="width: 100%;">
+                           <div class="card-header">
+                              <div class="row">
+                                 <div class="col-md">
+                                    <h5 class="mb-0 text-capitalize"> Prediction Trends</h5>
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                                <div class="card-body">
+                                   <canvas id="barChart"></canvas>
+                                </div>
+                        </div>
+                        </div>
+                   
+                     <div class="col-xl-3">
+                        <div class="card">
+                           <div class="card-body">
+
+                              <div class=" rounded-pill w-100 d-flex text-capitalize">
+                                 <h3>
+                                    ICU Prediction
+                                 </h3>
+                              </div>
+                              <div class="col-xl-3">
+                                 <img src="../static/assets/img/avatar/icu_pre.png" alt="icu_prediction_logo" style="width: 230px; height:230px ; margin-top: 50px; margin-left: 70px; margin-bottom: 60px;" >
+                              </div>
+                              <div  class="tag-container">
+                                 <div class="d-flex">
+                                    <div class="me-2">
+                                       <div class="dropdown d2c_dropdown d2c_date_dropdown">
+                                          <button
+                                             class="btn d2c_dropdown_btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                             type="button" id="dropdownMenuButton-predsingle3" data-bs-toggle="dropdown"
+                                             aria-expanded="false" >
+                                          12
+                                          </button>
+                                          <ul  class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton7" id="dropdown-menu-predsingle3">
+                                             <li class="dropdown-item border-0">01</li>
+                                                  <li class="dropdown-item border-0">02</li>
+                                                  <li class="dropdown-item border-0">03</li>
+                                                  <li class="dropdown-item border-0">04</li>
+                                                  <li class="dropdown-item border-0">05</li>
+                                                  <li class="dropdown-item border-0">06</li>
+                                                  <li class="dropdown-item border-0">07</li>
+                                                  <li class="dropdown-item border-0">08</li>
+                                                  <li class="dropdown-item border-0">09</li>
+                                                  <li class="dropdown-item border-0">10</li>
+                                                  <li class="dropdown-item border-0">11</li>
+                                                  <li class="dropdown-item border-0">12</li>
+                                                  <li class="dropdown-item border-0">13</li>
+                                                  <li class="dropdown-item border-0">14</li>
+                                                  <li class="dropdown-item border-0">15</li>
+                                                  <li class="dropdown-item border-0">16</li>
+                                                  <li class="dropdown-item border-0">17</li>
+                                                  <li class="dropdown-item border-0">18</li>
+                                                  <li class="dropdown-item border-0">19</li>
+                                                  <li class="dropdown-item border-0">20</li>
+                                                  <li class="dropdown-item border-0">21</li>
+                                                  <li class="dropdown-item border-0">22</li>
+                                                  <li class="dropdown-item border-0">23</li>
+                                                  <li class="dropdown-item border-0">24</li>
+                                                  <li class="dropdown-item border-0">25</li>
+                                                  <li class="dropdown-item border-0">26</li>
+                                                  <li class="dropdown-item border-0">27</li>
+                                                  <li class="dropdown-item border-0">28</li>
+                                                  <li class="dropdown-item border-0">29</li>
+                                                  <li class="dropdown-item border-0">30</li>
+                                                  <li class="dropdown-item border-0">31</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div class="me-2">
+                                       <div class="dropdown d2c_dropdown d2c_date_dropdown">
+                                          <button
+                                             class="btn d2c_dropdown_btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                             type="button" id="dropdownMenuButton-predsingle1"  data-bs-toggle="dropdown"
+                                             aria-expanded="false">
+                                          January
+                                          
+                                          </button>
+                                          <ul  class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton8" id="dropdown-menu-predsingle1">
+                                             <li class="dropdown-item border-0">January</li>
+                                             <li class="dropdown-item border-0">February</li>
+                                             <li class="dropdown-item border-0">March</li>
+                                             <li class="dropdown-item border-0">April</li>
+                                             <li class="dropdown-item border-0">May</li>
+                                             <li class="dropdown-item border-0">June</li>
+                                             <li class="dropdown-item border-0">July</li>
+                                             <li class="dropdown-item border-0">August</li>
+                                             <li class="dropdown-item border-0">September</li>
+                                             <li class="dropdown-item border-0">October</li>
+                                             <li class="dropdown-item border-0">November</li>
+                                             <li class="dropdown-item border-0">December</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                    <div>
+                                       <div class="dropdown d2c_dropdown d2c_date_dropdown">
+                                          <button
+                                             class="btn d2c_dropdown_btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                             type="button" id="dropdownMenuButton-predsingle2" data-bs-toggle="dropdown"
+                                             aria-expanded="false">
+                                          2020
+                                          </button>
+                                          <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton9" id="dropdown-menu-predsingle2">
+                                             <li class="dropdown-item border-0">2034</li>
+                                             <li class="dropdown-item border-0">2033</li>
+                                             <li class="dropdown-item border-0">2032</li>
+                                             <li class="dropdown-item border-0">2031</li>
+                                             <li class="dropdown-item border-0">2030</li>
+                                             <li class="dropdown-item border-0">2029</li>
+                                             <li class="dropdown-item border-0">2028</li>
+                                             <li class="dropdown-item border-0">2027</li>
+                                             <li class="dropdown-item border-0">2026</li>
+                                             <li class="dropdown-item border-0">2025</li>
+                                             <li class="dropdown-item border-0">2024</li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 </div>
+                                 <div class="col-mb-4" style="margin-top: 5% ; margin-bottom:5%; ">
+                                    <div class="tag-container" style="display: grid;">
+                                       <!-- initial and ending date -->
+                                       <div class="me-2">
+                                          <div class="dropdown d2c_dropdown d2c_date_dropdown">
+                                             <button
+                                             class="btn d2c_dropdown_btn dropdown-toggle d-flex justify-content-between align-items-center"
+                                              style="color: rgb(65, 65, 66);"
+                                                type="button" id="dropdownMenuButton-predsingle" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                00:00:00 - 04:00:00
+                                             </button>
+                                             <ul  class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton-shift" id="dropdown-menu-predsingle">
+                                                <li class="dropdown-item border-0">00:00:00 - 04:00:00</li>
+                                                <li class="dropdown-item border-0">04:00:00 - 08:00:00</li>
+                                                <li class="dropdown-item border-0">08:00:00 - 12:00:00</li>
+                                                <li class="dropdown-item border-0">12:00:00 - 16:00:00</li>
+                                                <li class="dropdown-item border-0">16:00:00 - 20:00:00</li>
+                                                <li class="dropdown-item border-0">20:00:00 - 00:00:00</li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                  </div>
+                              
+
+
+                                  <div style="display: grid;  margin-left: 30px;">
+
+  
+                                    <div style="width: 0px; height: 81px; justify-content: center; align-items: center; display: inline-flex">
+                                      <div style="width: 300px; height: 81px; position: relative">
+                                        <div style="width: 300px; height: 65px; left: 0px; top: 4px; position: absolute; background: #2f71e2; border-radius: 30px"></div>
+                                        <div style="width: 70px; height: 70px; left: 250px; top: 0px; position: absolute; background: white; border-radius: 9999px; border: 1px #6F6AF8 solid"></div>
+                                        <div style="width: 254px; height: 20px; left: 1px; top: 29px; position: absolute; text-align: center; color: white; font-size: 18px; font-family: sans-serif; font-weight: 600; line-height: 18px; word-wrap: break-word"> Patient Intake Count</div>
+                                        <div style="width: 53px; height: 24px; left: 257px; top: 24px; position: absolute;text-align: center; color: #0C0B0B; font-size: 18px; font-family: sans-serif; font-weight: 600; word-wrap: break-word" id="icuprediction-patientintake">3.15</div>
+                                      </div>
+                                    </div>
+                                 </div>
+                                 <div  style="display: grid; margin-left: 30px;">
+
+  
+                                    <div style="width: 0px; height: 81px; justify-content: center; align-items: center; display: inline-flex">
+                                      <div style="width: 300px; height: 81px; position: relative">
+                                        <div style="width: 300px; height: 65px; left: 0px; top: 4px; position: absolute; background: #2f71e2; border-radius: 30px"></div>
+                                        <div style="width: 70px; height: 70px; left: 250px; top: 0px; position: absolute; background: white; border-radius: 9999px; border: 1px #6F6AF8 solid"></div>
+                                        <div style="width: 254px; height: 20px; left: 1px; top: 29px; position: absolute; text-align: center; color: white; font-size: 18px; font-family: sans-serif; font-weight: 600; line-height: 18px; word-wrap: break-word"> Predicted Average  LOS</div>
+                                        <div style="width: 53px; height: 24px; left: 257px; top: 24px; position: absolute;text-align: center; color: #0C0B0B; font-size: 18px; font-family: sans-serif; font-weight: 600; word-wrap: break-word"  id="icuprediction-los">3.15</div>
+                                      </div>
+                                    </div>
+                                 </div>
+                            
+                              <div>
+                                 <button
+                                    class="d2c_link_btn btn rounded-pill w-100 d-flex align-items-center justify-content-center text-capitalize" id="prediction-call">
+                                 Make new Prediction
+                                 </button>
+                              </div>
+                           
+                        </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ICU DASHBOARD.HTML -->
+                  <div class="card">
+                     <button class="btn btn-outline-primary m-1 rounded-pill">
+                        <a href="dashboard_icu_2.html" > ICU DASHBOARD</a>
+                     </button>
+                  </div>
+                  <!-- Social Media -->
+                  <div class="col-lg-12" style="height: 75%;">
+                     <div class="card">
+                        <div class="card-header">
+                           <h5 class="mb-0 text-capitalize">CARE UNIT BREAKDOWN</h5>
+                        </div>
+                        <div class="card-body">
+                           <div class="row">
+                              <div class="col-lg-3 col-md-6">
+                                 <div class="card bg-primary bg-opacity-10">
+                                    <div class="card-header bg-primary">
+                                       <h6 class="mb-0 text-white text-capitalize"  >MICU</h6>
+                                    </div>
+                                    <div class="card-body">
+                                       <p class="small mb-1">Patients</p>
+                                       <h3 class="fw-bold" id="MICU" >350,56</h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6">
+                                 <div class="card bg-primary bg-opacity-10">
+                                    <div class="card-header bg-primary">
+                                       <h6 class="mb-0 text-white text-capitalize" >MSICU</h6>
+                                    </div>
+                                    <div class="card-body">
+                                       <p class="small mb-1">Patients</p>
+                                       <h3 class="fw-bold" id="MSICU">289,65</h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6">
+                                 <div class="card bg-primary bg-opacity-10">
+                                    <div class="card-header bg-primary">
+                                       <h6 class="mb-0 text-white text-capitalize" >CVICU</h6>
+                                    </div>
+                                    <div class="card-body">
+                                       <p class="small mb-1">Patients</p>
+                                       <h3 class="fw-bold" id="CVICU" >800,45</h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6">
+                                 <div class="card bg-primary bg-opacity-10">
+                                    <div class="card-header bg-primary">
+                                       <h6 class="mb-0 text-white text-capitalize" >NI</h6>
+                                    </div>
+                                    <div class="card-body">
+                                       <p class="small mb-1">Patients</p>
+                                       <h3 class="fw-bold" id="NI">101,25</h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6">
+                                 <div class="card bg-primary bg-opacity-10">
+                                    <div class="card-header bg-primary">
+                                       <h6 class="mb-0 text-white text-capitalize" >SICU</h6>
+                                    </div>
+                                    <div class="card-body">
+                                       <p class="small mb-1">Patients</p>
+                                       <h3 class="fw-bold" id="SICU">101,25</h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6">
+                                 <div class="card bg-primary bg-opacity-10">
+                                    <div class="card-header bg-primary">
+                                       <h6 class="mb-0 text-white text-capitalize" >TSICU</h6>
+                                    </div>
+                                    <div class="card-body">
+                                       <p class="small mb-1">Patients</p>
+                                       <h3 class="fw-bold" id="TSICU">101,25</h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6">
+                                 <div class="card bg-primary bg-opacity-10">
+                                    <div class="card-header bg-primary">
+                                       <h6 class="mb-0 text-white text-capitalize" >CCU</h6>
+                                    </div>
+                                    <div class="card-body">
+                                       <p class="small mb-1">Patients</p>
+                                       <h3 class="fw-bold" id="CCU">101,25</h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6">
+                                 <div class="card bg-primary bg-opacity-10">
+                                    <div class="card-header bg-primary">
+                                       <h6 class="mb-0 text-white text-capitalize" >NSISU</h6>
+                                    </div>
+                                    <div class="card-body">
+                                       <p class="small mb-1">Patients</p>
+                                       <h3 class="fw-bold" id="NSISU">101,25</h3>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- top Product box -->
+                  <!-- chat box -->
+                  <!-- Multiple bars progress -->
+               </div>
+            </div>
+         </div>
+         <!-- Main Content -->
+      </div>
+      
+      <script type="text/javascript" src="../static/lib/jQuery/calendar/src/jquery.datetimepicker.js"></script>
+      <!-- ICU DATA FROM DB AND API CALL -->
+      <script type="module" type="text/javascript" >
+         
+         import {fetchTotalPatients} from "../static/assets/js/dashboard_icu.js";
+         import {icu_careunit} from "../static/assets/js/dashboard_icu.js";
+         
+         function update_info(date) {
+            fetchTotalPatients(date);
+            var year = parseInt(date[2]);
+            console.log(year)
+            if (year >= 2024) {
+               
+               date[2] =(year-8).toString();
+               console.log("its run")
+            }
+
+
+             icu_careunit(date);
+
+         }
+         
+         function getCurrentDate() {
+            const now = new Date();
+            const year_ = now.getFullYear();
+            const month_ = (now.getMonth() + 1).toString().padStart(2, '0');
+            const date_ = now.getDate().toString().padStart(2, '0');
+            console.log(`Current date: ${year_}:${month_}:${date_}`)
+            return { year_, month_, date_ };
+          }
+
+          // Usage
+
+         
+         function getCurrentshift() {
+            // get current hour and based on that it give shift time
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+          
+            let directory;
+            let shift_type;
+            if (hours >= 0 && hours < 4) {
+              directory = '00:00:00 - 04:00:00';
+            } else if (hours >= 4 && hours < 8) {
+              directory = '04:00:00 - 08:00:00';
+            } else if (hours >= 8 && hours < 12) {
+              directory = '08:00:00 - 12:00:00';
+            } else if (hours >= 12 && hours < 16) {
+              directory = '12:00:00 - 16:00:00';
+            } else if (hours >= 16 && hours < 20) {
+              directory = '16:00:00 - 20:00:00';
+            } else {
+              directory = '20:00:00 - 00:00:00';
+            }
+
+            if (hours >= 0 && hours < 4) {
+               shift_type = 'Night';
+             } else if (hours >= 4 && hours < 8) {
+               shift_type = 'Night';
+             } else if (hours >= 8 && hours < 12) {
+               shift_type = 'Morning';
+             } else if (hours >= 12 && hours < 16) {
+               shift_type = 'Morning';
+             } else if (hours >= 16 && hours < 20) {
+               shift_type = 'Evening';
+             } else {
+               shift_type = 'Evening';
+             }
+          
+            console.log(`Current time: ${hours}:${minutes}:${seconds}`);
+            console.log(`Directory: ${directory}`);
+            console.log(`shift_type: ${shift_type}`);
+          
+            //alert( `${hours}:${minutes}:${seconds} - ${directory}`);
+            return {directory , shift_type};
+          }
+
+          
+          
+          const {year_,month_,date_}=getCurrentDate();
+          const {directory , shift_type}= getCurrentshift();
+          alert(year_);
+         
+         
+         var date=["12","January","2016","Patient out","00:00:00 - 04:00:00"];
+         date[0]=date_;
+         date[1]=month_;
+         date[2]=year_;
+         date[4]=directory;
+         var local_date = document.getElementById('local_time');
+         var shift_time = document.getElementById('shift-time');
+         var shift = document.getElementById('shift');
+         
+         local_date.textContent=`${date[2]}-${date[1]}-${date[0]} `;
+         shift_time.textContent=directory;
+         shift.textContent=shift_type;
+         update_info(date);
+         
+            //document.addEventListener('DOMContentLoaded', function () {
+            //     var dropdownButton1 = document.getElementById('dropdownMenuButton7');
+            //     var dropdownMenu1 = document.getElementById('dropdown-menu7');
+            //     var final=document.getElementById('button-submit');
+         //
+            //     // Add a click event listener to the first dropdown menu
+            //     dropdownMenu1.addEventListener('click', function (event) {
+            //         if (event.target.classList.contains('dropdown-item')) {
+            //             var selectedDate = event.target.textContent;
+            //             dropdownButton1.textContent = selectedDate;
+            //             date[0]=selectedDate;
+            //         }
+            //     });
+            //     var dropdownButton2 = document.getElementById('dropdownMenuButton8');
+            //     var dropdownMenu2 = document.getElementById('dropdown-menu8');
+         //
+            //     dropdownMenu2.addEventListener('click', function (event) {
+            //         if (event.target.classList.contains('dropdown-item')) {
+            //             var selectedMonth = event.target.textContent;
+            //             dropdownButton2.textContent = selectedMonth;
+            //             date[1]=selectedMonth;
+            //             update_info(date);
+            //         }
+            //     });
+         //
+            //     var dropdownButton3 = document.getElementById('dropdownMenuButton9');
+            //     var dropdownMenu3 = document.getElementById('dropdown-menu9');
+         //
+            //     dropdownMenu3.addEventListener('click', function (event) {
+            //         if (event.target.classList.contains('dropdown-item')) {
+            //             var selectedYear = event.target.textContent;
+            //             dropdownButton3.textContent = selectedYear;
+            //             date[2]=selectedYear;
+            //             update_info(date);}
+            //     });
+         //
+            //     var dropdownButtonshift = document.getElementById('dropdownMenuButton-shift');
+            //     var dropdownMenushift = document.getElementById('dropdown-menu');
+         //
+            //     dropdownMenushift.addEventListener('click', function (event) {
+            //         if (event.target.classList.contains('dropdown-item')) {
+            //             var selectedshift = event.target.textContent;
+            //             dropdownButtonshift.textContent = selectedshift;
+            //             date[4]=selectedshift;
+            //             update_info(date);}
+            //     });
+            // });
+  
+      </script>
+
+      
+     
+      
+      <script  type="module" type="text/javascript">
+
+         async function single(paramters){
+            const months = {"January": 1,"February": 2,"March": 3,"April": 4,"May": 5,"June": 6,"July": 7,"August": 8,"September": 9,"October": 10,"November": 11,"December": 12};
+         //const martices={"Patient intake":"patient_intake_count" ,"Patient out":"patient_out_count" ,"Total Patient":"total_icu_patients" ,"Average length of stay":"average_los"}
+            const martices={"Patient Intake Count":"patient_intake_count" ,"Patient Out Count":"patient_out_count" ,"Total Patients in ICU":"total_icu_patients" ,"Average Length of Stay":"average_los"}
+            
+            const shift = {"00:00:00 - 04:00:00": "00:00:00" , "04:00:00 - 08:00:00" : "04:00:00","08:00:00 - 12:00:00" : "08:00:00" ,"12:00:00 - 16:00:00" : "12:00:00" , "16:00:00 - 20:00:00" :"16:00:00 ","20:00:00 - 00:00:00" : "20:00:00"}
+         
+            var icu_patient_intake_ = document.getElementById('icuprediction-patientintake');
+            var icu_patient_los_ = document.getElementById('icuprediction-los');
+            console.log(icu_patient_intake_.textContent)
+            try {
+               const apiUrl =`http://127.0.0.1:5000/single_prediction/?date=${paramters[0]}-${months[paramters[1]]}-${paramters[2]} ${shift[paramters[4]]}`;
+              
+               
+               
+                  const response = await fetch(apiUrl);
+         
+                  
+             
+                  
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+         
+                var data = await response.json();
+                console.log(data)
+                //alert(data)
+                icu_patient_intake_.textContent = data["intake"];
+                icu_patient_los_.textContent = data["los"];
+         
+            } catch (error) {
+              // alert("not run")
+               icu_patient_intake_.textContent = 6;
+               icu_patient_los_.textContent  = 5.1;
+
+            }
+               }  
+                import {single_prediction} from "../static/assets/js/dashboard_chart.js";
+                
+         
+             function update_graphs(pred_paramters) {
+                 // Call the imported fetchData function with the provided date
+            
+                single(pred_paramters);
+                single_prediction(pred_paramters);
+                 
+             }
+      
+        var pred_paramters=["12","January","2016","Patient out","00:00:00 - 04:00:00"];
+
+        
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the elements for the first button and dropdown menu
+            var dropdownButton11 = document.getElementById('dropdownMenuButton-predsingle3');
+            var dropdownMenu11 = document.getElementById('dropdown-menu-predsingle3');
+            var final=document.getElementById('button-submit');
+            
+    
+            // Add a click event listener to the first dropdown menu
+            dropdownMenu11.addEventListener('click', function (event) {
+                if (event.target.classList.contains('dropdown-item')) {
+                    var selectedDate = event.target.textContent;
+                    dropdownButton11.textContent = selectedDate;
+                    pred_paramters[0]=selectedDate;
+                   
+                }
+            });
+            // Get the elements for the second button and dropdown menu
+            var dropdownButton22 = document.getElementById('dropdownMenuButton-predsingle1');
+            var dropdownMenu22 = document.getElementById('dropdown-menu-predsingle1');
+           
+            // Add a click event listener to the second dropdown menu
+            dropdownMenu22.addEventListener('click', function (event) {
+                if (event.target.classList.contains('dropdown-item')) {
+                    var selectedMonth = event.target.textContent;
+                    dropdownButton22.textContent = selectedMonth;
+                    pred_paramters[1]=selectedMonth;
+                    
+                    
+                    
+                }
+            });
+            
+            var dropdownButton33 = document.getElementById('dropdownMenuButton-predsingle2');
+            var dropdownMenu33 = document.getElementById('dropdown-menu-predsingle2');
+         
+            // Add a click event listener to the third dropdown menu
+            dropdownMenu33.addEventListener('click', function (event) {
+                if (event.target.classList.contains('dropdown-item')) {
+                    var selectedYear = event.target.textContent;
+                    dropdownButton33.textContent = selectedYear;
+                    pred_paramters[2]=selectedYear;
+                    
+                }
+            });
+            // Get the elements for the third button and dropdown menu
+            var dropdownButton44 = document.getElementById('dropdownMenuButton-predsingle');
+            var dropdownMenu44 = document.getElementById('dropdown-menu-predsingle');
+            
+           
+            // Add a click event listener to the third dropdown menu
+            dropdownMenu44.addEventListener('click', function (event) {
+                if (event.target.classList.contains('dropdown-item')) {
+                    var selectedMatric = event.target.textContent;
+                   
+                    dropdownButton44.textContent = selectedMatric;
+                    pred_paramters[3]=selectedMatric;
+
+                }
+            });
+
+            var dropdownButton55 = document.getElementById('prediction-call');
+            
+           
+            // Add a click event listener to the third dropdown menu
+            dropdownButton55.addEventListener('click', function (event) {
+                    update_graphs(pred_paramters);
+
+                
+            });
+            function getQueryParameter(param) {
+               const urlParams = new URLSearchParams(window.location.search);
+               return urlParams.get(param);
+            }
+            function onloads(){
+            if (getQueryParameter('day')) {
+               //alert("not found parameter")
+            const day2 = getQueryParameter('day');
+            const month = getQueryParameter('month');
+            const year = getQueryParameter('year');
+            const shift = getQueryParameter('shift');
+           // alert(day2)
+            pred_paramters[0]=day2
+            pred_paramters[1]=month
+            pred_paramters[2]=year
+            pred_paramters[4]=shift
+           // alert(pred_paramters)
+
+            document.getElementById('dropdownMenuButton-predsingle3').textContent = day2;
+            document.getElementById('dropdownMenuButton-predsingle1').textContent = month;
+            document.getElementById('dropdownMenuButton-predsingle2').textContent = year;
+            document.getElementById('dropdownMenuButton-predsingle').textContent = shift;
+         }
+      }
+      
+            window.onload = function () {
+               // Your existing code to update graphs
+               
+               // Access each element by its ID and change its text content to "5"
+               onloads()
+               update_graphs(pred_paramters);
+           };
+
+        //day= id="dropdownMenuButton-predsingle3" , month= id="dropdownMenuButton-predsingle1" ,
+        // year= id="dropdownMenuButton-predsingle2", shift= id="dropdownMenuButton-predsingle", 
+
+
+            
+        });
+      </script>
+      <script src="../static/lib/bootstrap_5/bootstrap.bundle.min.js"></script>
+      <!-- custom js -->
+      <script src="../static/assets/js/main.js"></script>
+      <!-- apex chart -->
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <!-- dashboard chart js-->
+      <script src="../static/assets/js/dashboard_chart.js"></script>
+      <script src="../static/assets/js/dashboard_icu.js"></script>
+      <script src="../static/lib/bootstrap_5/bootstrap.bundle.min.js"></script>
+      <!-- custom js -->
+      <script src="../static/assets/js/main.js"></script>
+      <!-- apex chart -->
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+      <!-- dashboard chart js-->
+      <script src="../static/assets/js/dashboard_chart.js"></script>
+      <script src="../static/assets/js/dashboard_icu.js"></script>
+      <!-- Initial  Javascript -->
+      <script src="../static/lib/jQuery/jquery-3.5.1.min.js"></script>
+      <script src="../static/lib/bootstrap_5/bootstrap.bundle.min.js"></script>
+      <!-- ChartJS -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <!-- ChartJS Config -->
+      <script src="../static/assets/js/chartjs/script.js"></script>
+      <!-- custom js -->
+      <script src="../static/assets/js/main.js"></script>
+      <script src="../static/assets/js/dashboard_icu.js"></script>
+   </body>
+</html>
